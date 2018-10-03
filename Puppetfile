@@ -25,10 +25,12 @@ mod 'ntp',
   :git => 'https://github.com/somabc/puppet-ntp.git',
   :ref => 'master'
 
-mod 'role'
+mod 'role',
   :git => 'https://github.com/somabc/puppet-role.git',
   :ref => 'master'
 
-mod 'profile'
+mod 'profile',
   :git => 'https://github.com/somabc/puppet-profile.git',
   :ref => 'master'
+
+
