@@ -31,10 +31,10 @@ mod 'ntp',
 
 mod 'role',
   :git => 'https://github.com/somabc/puppet-role.git',
-  :ref => 'development'
+  :ref => 'master'
 
 mod 'profile',
   :git => 'https://github.com/somabc/puppet-profile.git',
-  :ref => 'development'
+  :ref => 'master'
 
 
