@@ -24,34 +24,22 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-#$test_top_scope = "Top Scope"
-
-node 'bryanc2.mylabserver.com' {
-  notify { 'test message for bryanc2':
-    message => 'this is bryanc2 using a node def',
+node 'bryanc4' {
+  notify { 'This matches bryanc4!!!!': }
 }
 
-node 'bryanc4.mylabserver.com' {
-  notify { 'This matches the node name!!!': }
-  class { 'java': }
-}
-
-node /^bryanc4/ {
-  notify { "This is a node definition using regex!!!!":}
-}
+#node /^bryanc4/ {
+#  notify { "This is a node definition using regex!!!!": }
+#}
 
 node 'bryanc1.mylabserver.com' {
   include pe_repo::platform::el_6_x86_64
   include pe_repo::platform::ubuntu_1204_amd64
 }
 
-#node default {
-#  $test_top_scope = "This node scope!"
-#  $node_scope_var = "Node scope"
-#  notify { "This is the default node!": }
+node default {
   # This is where you can declare classes for all nodes.
   # Example:
-  #class { 'java': }
-#  notify { "test_top_scope":
-#    message => "This is a top scope var: ${test_top_scope}"
-#  }
+  #   class { 'my_class': }
+}
+
