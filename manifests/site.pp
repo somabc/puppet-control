@@ -50,4 +50,3 @@ node default {
 #  notify { "test_top_scope":
 #    message => "This is a top scope var: ${test_top_scope}"
   }
-}
