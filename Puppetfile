@@ -37,4 +37,6 @@ mod 'profile',
   :git => 'https://github.com/somabc/puppet-profile.git',
   :ref => 'master'
 
-
+mod 'nginx',
+  :git => 'https://github.com/somabc/puppet-nginx.git'
+  :ref => 'master'
