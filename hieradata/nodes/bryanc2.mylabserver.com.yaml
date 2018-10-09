@@ -1,0 +1,8 @@
+---
+profile::nginx::vhosts:
+  - 'fqdn': 'bryanc2.mylabserver.com'
+  'port': 80
+  'server_aliases': ''
+  - 'fqdn': 'bryanc2b.mylabserver.com'
+  'port': 80
+  'server_aliases': 'bryanc2b1.mylabserver.com
