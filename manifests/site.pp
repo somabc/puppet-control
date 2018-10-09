@@ -26,6 +26,11 @@ File { backup => false }
 
 #$test_top_scope = "Top Scope"
 
+node 'bryanc2.mylabserver.com' {
+  notify { 'test message for bryanc2':
+    message => 'this is bryanc2 using a node def',
+}
+
 node 'bryanc4.mylabserver.com' {
   notify { 'This matches the node name!!!': }
   class { 'java': }
@@ -40,7 +45,7 @@ node 'bryanc1.mylabserver.com' {
   include pe_repo::platform::ubuntu_1204_amd64
 }
 
-node default {
+#node default {
 #  $test_top_scope = "This node scope!"
 #  $node_scope_var = "Node scope"
 #  notify { "This is the default node!": }
@@ -49,4 +54,4 @@ node default {
   #class { 'java': }
 #  notify { "test_top_scope":
 #    message => "This is a top scope var: ${test_top_scope}"
-  }
+#  }
