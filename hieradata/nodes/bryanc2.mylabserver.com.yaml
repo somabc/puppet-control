@@ -6,5 +6,3 @@ profile::nginx::vhosts:
   - 'fqdn': 'bryanc2b.mylabserver.com'
     'port': 80
     'server_aliases': 'bryanc2b1.mylabserver.com
-classes: 
-  - profile::nginx
